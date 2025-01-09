@@ -12,13 +12,9 @@ class Project(db.Model):
     title = db.Column(db.String(1000), nullable=False)
     description = db.Column(db.Text)
 
-@app.route('/')
+@app.route('/',methods=('GET', 'POST'))
 def index():
     projects = Project.query.all()
-    return render_template('index.html',projects=projects)
-
-@app.route('/submit/', methods=('GET', 'POST'))
-def submit():
     if request.method == 'POST':
         title = request.form['title']
         description = request.form['description']
@@ -26,4 +22,5 @@ def submit():
                           description=description)
         db.session.add(project)
         db.session.commit()
-    return redirect('/')
+        return redirect('/')
+    return render_template('index.html',projects=projects)

@@ -6,7 +6,7 @@
 
   <body>
     <div class="container">
-        <form>
+        <form method="POST">
             <div>
                 <h1>The Gallery of Incomplete Projects</h1>
                 <input type="text" name="title" id="title" placeholder="Your project title" required>
@@ -69,10 +69,10 @@ The gallery aims to provide closure through ritual, and to give projects a purpo
     <details><summary>{{p.title}}</summary>
         <p>{{p.description}}<p> 
          </details>
-</ul>
+
  
 {% endfor %}
-
+</ul>
 
 </div>
   </body>
