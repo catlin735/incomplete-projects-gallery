@@ -1,0 +1,61 @@
+.container {
+    border: 1px DarkSlateGrey dotted;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, .5);
+    padding: 2em;
+    padding-top: 1.5em;
+    max-width: 40em;
+    margin: 0 auto;
+    margin-top: 6%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background: #b0c8e1;
+}
+
+pre {
+    z-index: -2;
+}
+
+
+button {
+    margin-top: 1.5em;
+ 
+}
+
+#checkbox {
+    margin-top:1.5em;
+}
+
+#blimp {
+    position:absolute;
+    top: 6%;
+    left: 6%;
+    white-space: "no-wrap"; 
+}
+
+#summary {
+    background-color:#b0c8e1;
+    border: 1px DarkSlateGrey dotted;
+    border-radius: 4px;
+    padding: 2em;
+    padding-top: 1.5em;
+    max-width: 40em;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+summary {
+    margin-top:1em;
+}
+
+p {
+    font-size:0.8em;
+}
+
+textarea {
+    margin-top:0.5em;
+    font-family: sans-serif;
+}
+
