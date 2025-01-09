@@ -11,7 +11,7 @@
                 <h1>The Gallery of Incomplete Projects</h1>
                 <input type="text" name="title" id="title" placeholder="Your project title" required>
                 <br>
-                <textarea placeholder="Description, links, obstacles, etc." required></textarea>
+                <textarea name="description" placeholder="Description, links, obstacles, etc." required></textarea>
                 <br>
                 <input type="checkbox" id="checkbox" name="checkbox" value="incomplete" required>
                 <label for="checkbox" style="font-size:small"> This project is and shall be permanently incomplete.</label>
@@ -65,16 +65,13 @@ The gallery aims to provide closure through ritual, and to give projects a purpo
 <strong>Browse projects:</strong>
    
 <ul>
-    <details><summary>Title</summary>
-       <p> Stuff stuff stuff <p> 
-        </details>
-
-        <details><summary>stuff</summary>
-            <p>  Stuff stuff stuff <p> 
-            </details>
+    {% for p in projects %}
+    <details><summary>{{p.title}}</summary>
+        <p>{{p.description}}<p> 
+         </details>
 </ul>
  
-
+{% endfor %}
 
 
 </div>
